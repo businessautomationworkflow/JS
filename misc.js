@@ -11,15 +11,15 @@
  * @returns {Object} Object with boolean values for each key indicating equality.
  */
 function compareObjects(obj1, obj2) {
-  const result = {};
+  var result = {};
 
   function compareKeys(a, b, prefix = '') {
-    const keys = new Set([...Object.keys(a || {}), ...Object.keys(b || {})]);
+    var keys = new Set([...Object.keys(a || {}), ...Object.keys(b || {})]);
 
-    for (const key of keys) {
-      const fullKey = prefix ? `${prefix}.${key}` : key;
-      const val1 = a?.[key];
-      const val2 = b?.[key];
+    for (var key of keys) {
+      var fullKey = prefix ? "" + (prefix) + ".${key}" : key;
+      var val1 = a?.[key];
+      var val2 = b?.[key];
 
       if (typeof val1 === 'object' && typeof val2 === 'object' && val1 !== null && val2 !== null) {
         compareKeys(val1, val2, fullKey);

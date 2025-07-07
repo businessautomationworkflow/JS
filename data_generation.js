@@ -20,9 +20,9 @@ function getRandomInt(min, max) {
  * @returns {string} A random alphanumeric string.
  */
 function getRandomString(length) {
-  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-  let result = '';
-  for (let i = 0; i < length; i++) {
+  var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  var result = '';
+  for (var i = 0; i < length; i++) {
     result += chars.charAt(Math.floor(Math.random() * chars.length));
   }
   return result;
@@ -35,8 +35,8 @@ function getRandomString(length) {
  * @returns {Date} Random date between start and end.
  */
 function getRandomDate(start, end) {
-  const startTime = new Date(start).getTime();
-  const endTime = new Date(end).getTime();
+  var startTime = new Date(start).getTime();
+  var endTime = new Date(end).getTime();
   return new Date(getRandomInt(startTime, endTime));
 }
 
