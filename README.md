@@ -7,7 +7,7 @@ A modular JavaScript utility library designed for use with IBM Business Automati
 ## 🔗 Live Documentation
 
 Full API documentation is available here:  
-👉 [https://businessautomationworkflow.github.io/js/](https://businessautomationworkflow.github.io/js/)
+👉 [https://businessautomationworkflow.github.io/js/](https://businessautomationworkflow.github.io/JS/)
 
 Generated automatically using [JSDoc](https://jsdoc.app/).
 
